@@ -1,0 +1,40 @@
+# environment.yml
+# Configuration file for creating a Conda Environment with dependencies needed for pyRSD.
+# Create the environment by running the following command (after installing Miniconda):
+#   $ conda env create --name pyrsd-docs -f environment.yml
+
+name: pyrsd-docs
+
+channels:
+  - defaults
+  - nickhand
+  - astropy
+  - conda-forge
+
+dependencies:
+  - python=3.6
+  - gsl
+  - fftw
+  - numpy
+  - pandas
+  - scipy
+  - george
+  - scikit-learn >=0.17
+  - emcee
+  - mpi4py
+  - matplotlib
+  - seaborn
+  - corner
+  - six
+  - lmfit=0.9.7
+  - autograd
+  - xarray
+  - IPython
+  - sphinx_rtd_theme
+  - numpydoc
+  - sphinx
+  - pip
+  - pybind11
+  - pip:
+      - sphinxcontrib-programoutput
+  - pyrsd
